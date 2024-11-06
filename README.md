@@ -7,7 +7,7 @@ The method   can be summarized into three key aspects as follows.
 
 (2) We utilize a pre-trained convolutional neural network named ConvNeXt for encoding the image data,   
 
-    and the features were further compressed by Principal Component Analysis (PCA) dimensionality reduction.   
+and the features were further compressed by Principal Component Analysis (PCA) dimensionality reduction.   
     
 (3) Bagging-based multi-model voting classification algorithm is adopted to enhance robustness. 
 
