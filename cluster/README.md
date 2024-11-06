@@ -13,8 +13,7 @@ Place this folder within the directory, at the same level as the following folde
 
 1. `python encoding.py` within the `cluster/` folder to generate the initial encoded files.
 
-2. `python main.py`. Follow the prompts to enter the number of clusters, clustering dimensions, and clustering type (choose either PCA-based clustering or raw encoding-based clustering). When prompted, select the desired output dimension from the dimension list in the code.  
-   - Stop the program when prompted for input and check the output `s_ratio.jpg` file to identify an appropriate dimension (look for a noticeable breakpoint in the middle of the range). The clustering results for multiple models will be saved in the `result` folder.
+2. `python main.py`. Follow the prompts to enter the number of clusters, clustering dimensions, and clustering type (choose either PCA-based clustering or raw encoding-based clustering). When prompted, select the desired output dimension from the dimension list in the code. Stop the program when prompted for input and check the output `s_ratio.jpg` file to identify an appropriate dimension (look for a noticeable breakpoint in the middle of the range). The clustering results for multiple models will be saved in the `result` folder.
 
 3. `python get_final_result.py` to create the `result_final/` folder, which contains the final results for the combined clustering.
 
