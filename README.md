@@ -26,8 +26,6 @@ The method can be summarized into three key aspects as follows.
 4. **`python polar.py`**  
    Converts images in `cae_img/` to polar coordinate images and saves them in the `polar_img/` folder.
 
-Here is the translated and formatted content suitable for an Overleaf README:
-
 ---
 
 ## Clustering
@@ -38,7 +36,7 @@ Here is the translated and formatted content suitable for an Overleaf README:
 
 **Model Weights Download Link**:  
 [Download ConvNeXt Model Weights](https://dl.fbaipublicfiles.com/convnext_in22k_224.pth)
-
+如果无法进入，可以登录下载[https://hf-mirror.com/timm/convnext_xlarge.fb_in22k/tree/main](https://github.com/facebookresearch/ConvNeXt?tab=readme-ov-file)
 ---
 
 ### Folder Descriptions
@@ -81,5 +79,3 @@ Data/
    - Within `result_final/`, the `rest` folder holds the discarded data that the unsupervised model couldn't classify into any group.
 
 ---
-
-This structure is optimized for an Overleaf README and provides clear and organized instructions for setting up and running your clustering project.
