@@ -35,8 +35,8 @@ The method can be summarized into three key aspects as follows.
 - `torch==1.7.1`
 
 ### Model Weights Download Link:  
-[Download ConvNeXt Model Weights](https://dl.fbaipublicfiles.com/convnext_in22k_224.pth)
-如果无法进入，可以登录下载(https://github.com/facebookresearch/ConvNeXt?tab=readme-ov-file)
+- **[Download ConvNeXt Model Weights](https://dl.fbaipublicfiles.com/convnext_in22k_224.pth)
+    如果无法进入，可以登录(https://github.com/facebookresearch/ConvNeXt?tab=readme-ov-file)
 ---
 
 ### Folder Descriptions
