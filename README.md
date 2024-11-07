@@ -26,28 +26,60 @@ The method can be summarized into three key aspects as follows.
 4. **`python polar.py`**  
    Converts images in `cae_img/` to polar coordinate images and saves them in the `polar_img/` folder.
 
+Here is the translated and formatted content suitable for an Overleaf README:
+
+---
+
 ## Clustering
-环境要求：
-scikit-learn==1.2.2
-torch == 1.7.1
-模型权重下载地址: https://dl.fbaipublicfiles.com/convnext_in22k_224.pth
 
-各文件夹介绍
-Data/：数据集存放地址
-cae_niose/：数据预处理代码
-cluster/：聚类代码
+### Environment Requirements
+- `scikit-learn==1.2.2`
+- `torch==1.7.1`
 
-先在Data中生成数据，请符合以下格式：
+**Model Weights Download Link**:  
+[Download ConvNeXt Model Weights](https://dl.fbaipublicfiles.com/convnext_in22k_224.pth)
+
+---
+
+### Folder Descriptions
+- **Data/**: Directory for storing datasets
+- **cae_noise/**: Contains data preprocessing code
+- **cluster/**: Contains clustering code
+
+---
+
+### Data Preparation
+First, generate the data in the `Data/` folder, following the structure below:
+
+```
 Data/
-	Datasets/
-		train/
-		test/
-	raw/
-请将原始数据全部存入raw/中，将raw的数据随机划分成训练和测试集，分别存入Datasets下的train/和test/。
+  Datasets/
+    train/
+    test/
+  raw/
+```
 
+1. Store all the raw image data in the `raw/` folder.
+2. Randomly split the raw data into training and testing sets, and place them in `Datasets/train/` and `Datasets/test/`, respectively.  
+   - **Note**: This step is intended for subsequent evaluation of the encoding results, not for training the network.
 
-进入cluster中：
-1.python encoding.py,生成原始编码文件。
-2.python main.py 请按照提示，输入聚类数量，聚类维度和聚类类型（pca聚类或者raw原始编码聚类），请在代码种的维度列表中选择输出维度，
-  运行到输入提示时，中断程序并根据输出的s_ratio.jpg选择合适的维度（中间发生突变的维度），在result文件夹中得到多模型聚类的结果。
-3.python get_final_result.py  生成result_final/，其中为混合聚类的最终结果. result_final/中rest文件夹是丢弃的数据，即无监督无法分出来的类。
+---
+
+### Clustering Instructions
+
+1. **Run `encoding.py` in the `cluster/` folder**  
+   - This script generates the initial encoded files.
+
+2. **Run `main.py`**  
+   - Follow the prompts to input the number of clusters, clustering dimensions, and clustering type (choose between PCA-based clustering or raw encoding-based clustering).  
+   - Select the appropriate output dimension from the list in the code.  
+   - When prompted for input, interrupt the program and analyze the `s_ratio.jpg` output to choose a suitable dimension, specifically where a noticeable change occurs in the plot.  
+   - The results of multi-model clustering will be saved in the `result` folder.
+
+3. **Run `get_final_result.py`**  
+   - This script generates the `result_final/` folder, containing the final mixed clustering results.  
+   - Within `result_final/`, the `rest` folder holds the discarded data that the unsupervised model couldn't classify into any group.
+
+---
+
+This structure is optimized for an Overleaf README and provides clear and organized instructions for setting up and running your clustering project.
