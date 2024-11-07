@@ -36,7 +36,7 @@ The method can be summarized into three key aspects as follows.
 
 ### Model Weights Download Link:  
 - **[Download ConvNeXt Model Weights](https://dl.fbaipublicfiles.com/convnext_in22k_224.pth)
-    如果无法进入，可以登录(https://github.com/facebookresearch/ConvNeXt?tab=readme-ov-file)
+    If you can‘t access it, please log in：(https://github.com/facebookresearch/ConvNeXt?tab=readme-ov-file)
 ---
 
 ### Folder Descriptions
