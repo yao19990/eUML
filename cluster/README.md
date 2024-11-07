@@ -1,6 +1,5 @@
 scikit-learn==1.2.2
 torch == 1.7.1
-pytorch_pretrained_vit
 
 **Folder Descriptions**:  
 Place this folder within the directory, at the same level as the following folders:
